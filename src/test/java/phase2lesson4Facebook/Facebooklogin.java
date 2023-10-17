@@ -29,7 +29,7 @@ public class Facebooklogin {
 				
 				driver.get("https://www.facebook.com/");
 		}
-	    @DisplayName("Junit test in facebook")
+	    @Order(1)
         @MyTest
 		public void login() throws InterruptedException
 		{
@@ -39,6 +39,7 @@ public class Facebooklogin {
 				driver.findElement(By.xpath("//button[@id='u_0_5_+8']")).click();
 				Thread.sleep(1500);
 		}
+		@Order(2)
 	    @MyTest
 	    public void navigate() throws InterruptedException
 	    {
